@@ -1,9 +1,36 @@
 img {
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   width: 100px;
-height: 100px;
-border-radius: 50px;
-object-fit: cover;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
 }
-.header{display: flex;}
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: rgba(234, 255, 0, 0.464);
+  padding:20px
+}
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 160, 122, 0.9);
+
+}
+main {
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  background-color: pink;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  align-items: center;
+}
