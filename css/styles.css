@@ -1,4 +1,4 @@
-img {
+.idPilt {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   width: 100px;
@@ -12,14 +12,15 @@ img {
   align-items: center;
   border-radius: 100px;
   background-color: rgba(234, 255, 0, 0.464);
-  padding:20px
+  padding: 20px;
 }
 body {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 160, 122, 0.9);
-
+  background-image: url("../images/palmid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main {
   border-radius: 100px;
@@ -33,4 +34,28 @@ nav {
   justify-content: space-between;
   background-color: aquamarine;
   align-items: center;
+}
+.code {
+  border-radius: 50px;
+  object-fit: cover;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+}
+section {
+  display: grid;
+  padding: 20px;
+}
+section h2 {
+  justify-self: center;
+}
+.kontakt {
+  justify-self: flex-start;
+}
+.html {
+  justify-self:center;
+}
+.html:hover, .html:focus {
+  outline:2px solid blue;
+  background-color: yellow;
 }
