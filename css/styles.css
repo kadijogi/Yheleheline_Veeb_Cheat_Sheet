@@ -1,11 +1,14 @@
-.idPilt {
-  font-weight: bold;
-  font-family: "Times New Roman", Times, serif;
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  object-fit: cover;
+body {
+  display: grid;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/palmid.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
 }
+
 .header {
   display: grid;
   justify-content: center;
@@ -14,14 +17,13 @@
   background-color: rgba(234, 255, 0, 0.464);
   padding: 20px;
 }
-body {
-  display: grid;
-  justify-content: center;
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
   align-items: center;
-  background-image: url("../images/palmid.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
 main {
   border-radius: 100px;
   justify-content: center;
@@ -29,19 +31,7 @@ main {
   display: grid;
   background-color: pink;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: aquamarine;
-  align-items: center;
-}
-.code {
-  border-radius: 50px;
-  object-fit: cover;
-  width: fit-content;
-  height: fit-content;
-  justify-self: center;
-}
+
 section {
   display: grid;
   padding: 20px;
@@ -49,13 +39,38 @@ section {
 section h2 {
   justify-self: center;
 }
+
+.code {
+  border-radius: 50px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  justify-self: center;
+}
+
+@media (min-width: 768px) {
+  body {
+  }
+}
+
 .kontakt {
   justify-self: flex-start;
 }
 .html {
-  justify-self:center;
+  justify-self: center;
 }
-.html:hover, .html:focus {
-  outline:2px solid blue;
+.html:hover,
+.html:focus {
+  outline: 2px solid blue;
   background-color: yellow;
+}
+
+.idPilt {
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  object-fit: cover;
 }
