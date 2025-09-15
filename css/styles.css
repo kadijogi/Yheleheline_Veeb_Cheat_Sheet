@@ -14,14 +14,23 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 100px;
-  background-color: rgba(234, 255, 0, 0.464);
+  background-color: rgba(255, 0, 8, 0.464);
   padding: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
 }
 nav {
   display: flex;
   justify-content: space-between;
-  background-color: aquamarine;
   align-items: center;
+}
+nav a {
+  color: aliceblue;
+}
+nav a:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -30,6 +39,7 @@ main {
   align-items: center;
   display: grid;
   background-color: pink;
+  margin: 110px;
 }
 
 section {
@@ -54,8 +64,10 @@ section h2 {
   }
 }
 
-.kontakt {
-  justify-self: flex-start;
+.card {
+  justify-self: center;
+  background-color: aliceblue;
+  border-radius: 20px;
 }
 .html {
   justify-self: center;
@@ -65,7 +77,16 @@ section h2 {
   outline: 2px solid blue;
   background-color: yellow;
 }
-
+@keyframes move {
+  0% {
+    transform: translateX(-200px);}
+    100% {
+      transform: translateX(0);
+    }
+  }
+div {
+  animation: move 2s ease-in;
+}
 .idPilt {
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
