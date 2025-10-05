@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="Yheleheline õppeveeb" />
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -20,21 +25,39 @@
     </header>
     <main>
       <section id="sissejuhatus">
-        <h2>Sissejuhatus</h2>
-        <p>Mis on HTML?</p>
-        <p>
-          HTML (HyperText Markup Language) on keel, millega märgendatakse
-          veebilehti. Selle abil loome veebilehele struktuuri, pannes ritta
-          elemendid, millest veebileht koosneb
-        </p>
-        <a class="html" href="https://www.w3schools.com/Html/" target="_blank">
-          <img src="images/html.jpeg" alt="html" />
-        </a>
+        <div>
+          <h2>Sissejuhatus</h2>
+          <div class="svg">
+            <i class="fa-solid fa-icons"></i>
+          </div>
+          <p>Mis on HTML?</p>
+          <p>
+            HTML (HyperText Markup Language) on keel, millega märgendatakse
+            veebilehti. Selle abil loome veebilehele struktuuri, pannes ritta
+            elemendid, millest veebileht koosneb
+          </p>
+        </div>
+        <div>
+          <a
+            class="klikipildid"
+            href="https://www.w3schools.com/Html/"
+            target="_blank"
+          >
+            <img
+              loading="lazy"
+              fetchpriority="high"
+              src="images/html.jpeg"
+              alt="html"
+            />
+          </a>
+          <a class="klikipildid" href="#css">
+            <img src="images/css.jpg" width="300px" alt="css ikoonid" />
+          </a>
+        </div>
       </section>
       <section id="teooria">
         <h2>Teooria</h2>
         <p>HTML tähendus.</p>
-
         <img class="code" src="images/code.png" alt="koodikasud" />
       </section>
       <section id="css">
@@ -45,14 +68,21 @@
           abil saame määrata HTML-iga ritta pandud elementide asukohta, värvi
           jms.
         </p>
+        <div class="video">
+          <video width="640" height="360" controls>
+            <source src="images/alpaca.mp4" type="video/mp4" />
+            Sinu brauser ei toeta video esitust.
+          </video>
+        </div>
       </section>
     </main>
     <section id="kontakt">
-      <div class="card">
-      <h2 class="kontakt">Kontakt</h2>
-      <img class="idPilt" src="images/pilt.jpg" alt="looduspilt" />
-      <p>Kadi Jogi</p>
-      <p>Mulle meeldib matkata</p></div>
+      <div class="card move">
+        <h2 class="kontakt">Kontakt</h2>
+        <img class="idPilt" src="images/pilt.jpg" alt="looduspilt" />
+        <p>Kadi Jogi</p>
+        <p>Mulle meeldib reisida</p>
+      </div>
     </section>
     <footer>© 2025</footer>
   </body>
